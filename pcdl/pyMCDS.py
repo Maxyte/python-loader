@@ -1213,7 +1213,7 @@ class pyMCDS:
         df_cell = df_cell.astype(do_type)
 
         # categorical translation
-        df_cell.loc[:,'current_death_model'].replace(ds_death_model, inplace=True)  # bue 20230614: this column looks like an artefact to me
+        # df_cell.loc[:,'current_death_model'].replace(ds_death_model, inplace=True)  # bue 20230614: this column looks like an artefact to me
         df_cell.loc[:,'cycle_model'].replace(ds_cycle_model, inplace=True)
         df_cell.loc[:,'cycle_model'].replace(ds_death_model, inplace=True)
         df_cell.loc[:,'current_phase'].replace(ds_cycle_phase, inplace=True)
